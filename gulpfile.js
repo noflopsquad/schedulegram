@@ -8,7 +8,7 @@ gulp.task('test',function(){
 	gulp.src(specsPath).pipe(jasmine());
 })
 
-gulp.task('continuous-tdd',['test'],function(){
+gulp.task('tdd',['test'],function(){
 	gulp.watch(srcPath,['test']);
 })
 
