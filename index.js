@@ -1,10 +1,8 @@
-global.srcRequire = function(name){
-	return require( __dirname + '/' + name);
-}
+
 
 var express  = require('express');
 var bodyParser = require('body-parser');
-var Actions = srcRequire('Actions');
+var Actions = require('./src/Actions');
 
 
 var urlEncodedParser = bodyParser.urlencoded({extended: false});
