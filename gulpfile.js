@@ -5,7 +5,7 @@ var specsPath = 'specs/**/*.js';
 var srcPath = 'src/**/*.js';
 
 gulp.task('test',function(){
-	gulp.src(specsPath).pipe(jasmine());
+	gulp.src(specsPath).pipe(jasmine({verbose: true, includeStackTrace: true}));
 })
 
 gulp.task('tdd',['test'],function(){
